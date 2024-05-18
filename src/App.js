@@ -75,7 +75,7 @@ setSearchedHeading(searchValue)
 
   useEffect(() => {
     generateImage()
-  },[])
+  },[searchedHeading])
 
   const userSearchValue = event => {
     setSearchValue(event.target.value)

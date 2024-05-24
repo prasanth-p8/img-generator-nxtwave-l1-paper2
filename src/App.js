@@ -81,6 +81,11 @@ setSearchedHeading(searchValue)
     setSearchValue(event.target.value)
   }
 
+  const searchUserInput = () => {
+    generateImage()
+  }
+
+
   const suggestedSearchValue = event => {
     setSearchedHeading(event.target.value)
     setSearchValue(event.target.value)
@@ -127,7 +132,7 @@ return (
       <div className='search-container'>
       <div className="search-input-container">
         <input value={searchValue} onChange={userSearchValue} onKeyDown={enterPressed} type='search' className="search-input" placeholder='Search for image you need...' />
-        <button className="search-button" onClick={suggestedSearchValue} >
+        <button className="search-button" onClick={searchUserInput} >
         <FaSearchengin size={20}/>
         </button>
       </div>

@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Img Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Img Generator is a React application that allows users to search for images using the Unsplash API. Users can enter search terms or select from suggested search terms button to view images related to their query.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Demo](#demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Reference](#api-reference)
+- [Contributing](#contributing)
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the live demo of the application: [Live Demo](https://prasanthimggenerator.vercel.app)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Search for Images:** Enter a search term to find related images using the Unsplash API.
+- **Suggested Searches:** Click on predefined suggested search buttons for quick results.
+- **Loading Indicator:** Displays a loading indicator while the API request is in progress.
+- **Error Handling:** Shows an error message if the API request fails or if no images are found.
+- **Image Description:** Hover at the each image to know the description of that image.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- React
+- Hooks
+- Unsplash API
+- CSS for styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/prasanth-p8/img-generator-nxtwave-l1-paper2
+   ```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd img-generator-nxtwave-l1-paper2-main
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application will be available at http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Open the application in your browser.
+2. Enter a search term in the search input field and press Enter or click the search button.
+3. Alternatively, click one of the suggested search buttons to search for a predefined term.
+4. View the search results displayed on the page.
+5. Hover at the image to see the image discription.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Reference
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application uses the Unsplash API to fetch images. You need to have an Unsplash API key to use this application.
 
-### Code Splitting
+- **Login:** Open your unsplash account, using https://unsplash.com/developers
+- **API Key:** Get your API key from your created applicaiton.
+- **Endpoint:** https://api.unsplash.com/search/photos
+- **Query Parameters:**
+  - _page:_ The page number to retrieve.
+  - _client_id:_ Your Unsplash API key.
+  - _query:_ The search value.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are welcome! Please follow these steps to contribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your forked repository.
+5. Create a pull request to the main repository.

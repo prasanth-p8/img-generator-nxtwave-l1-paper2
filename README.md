@@ -42,7 +42,7 @@ Check out the live demo of the application: [Live Demo](https://prasanthimggener
 2. Navigate to the project directory:
 
    ```bash
-   cd img-generator-nxtwave-l1-paper2-main
+   cd img-generator-nxtwave-l1-paper2
    ```
 
 3. Install the dependencies:
